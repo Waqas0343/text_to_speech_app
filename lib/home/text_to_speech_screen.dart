@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'controller/home_screen_controller.dart';
+import 'controller/speech_to_text_screen.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key, required this.title});
@@ -115,6 +116,28 @@ class MyHomePage extends StatelessWidget {
                   ),
                 ],
               ),
+
+              const SizedBox(height: 20),
+
+              SizedBox(
+                width: Get.width,
+                  height: 50,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Get.to(()=> SpeechToTextScreen());
+                    },
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor:
+                      Colors.indigo,
+                    ),
+                    child: Text(
+                      'Speech To Text',
+                      style: Get.textTheme.titleSmall
+                          ?.copyWith(color: Colors.white),
+                    ),
+                  )),
+
             ],
           ),
         ),

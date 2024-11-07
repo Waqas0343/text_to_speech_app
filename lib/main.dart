@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'home/home_screen.dart';
+import 'home/text_to_speech_screen.dart';
 
 void main() {
   runApp(const MyApp());
